@@ -334,6 +334,46 @@ footer.site-footer {
   border: 1px solid var(--rule);
 }
 
+/* Password gate */
+.password-gate {
+  max-width: 380px;
+  margin: 3rem auto;
+  padding: 1.75rem;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  text-align: center;
+}
+.password-gate input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.password-gate button {
+  background: var(--black);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.password-gate button:hover { background: var(--accent-dark); }
+.password-error {
+  display: none;
+  color: #b3261e;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+.resource-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 /* Research grid (same layout pattern as People grid) */
 .research-grid {
   display: grid;

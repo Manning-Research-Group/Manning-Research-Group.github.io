@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     ["index.html", "Welcome!"],
     ["research.html", "Research"],
     ["people.html", "People"],
+    ["idp.html", "IDP"],
     ["publications.html", "Publications"],
     ["teaching.html", "Teaching"],
-    ["manual.html", "Manning Research Manual"]
+    ["manual.html", "Manning Research Manual"],
+    ["resources.html", "Group Resources"]
   ];
 
   var navHtml = links
