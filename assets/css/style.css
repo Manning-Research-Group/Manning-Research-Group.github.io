@@ -281,7 +281,7 @@ footer.site-footer {
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
-.pub-list-reverse li {
+.pub-list.pub-list-reverse li {
   counter-increment: pub-counter -1;
 }
 
@@ -325,6 +325,32 @@ footer.site-footer {
 
 /* Group photo captions */
 .photo-year { font-weight: 600; margin-top: 1.5rem; }
+
+/* Research page project images */
+.project-image {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem auto;
+  background: #ddd;
+}
+@media (min-width: 620px) {
+  .section-block.has-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .section-block.has-image .project-image {
+    flex: 0 0 auto;
+    margin: 0.25rem 0 0 0;
+  }
+  .section-block.has-image .section-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
 
 /* PDF viewer (CV page) */
 .pdf-viewer-wrap {
