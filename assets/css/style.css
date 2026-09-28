@@ -326,30 +326,40 @@ footer.site-footer {
 /* Group photo captions */
 .photo-year { font-weight: 600; margin-top: 1.5rem; }
 
-/* Research page project images */
+/* Research grid (same layout pattern as People grid) */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.project-card ul {
+  margin-top: 0;
+}
+
+/* Project images */
 .project-image {
   display: block;
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1rem auto;
+  margin: 0 0 0.75rem 0;
   background: #ddd;
-}
-@media (min-width: 620px) {
-  .section-block.has-image {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-  .section-block.has-image .project-image {
-    flex: 0 0 auto;
-    margin: 0.25rem 0 0 0;
-  }
-  .section-block.has-image .section-text {
-    flex: 1 1 auto;
-    min-width: 0;
-  }
 }
 
 /* PDF viewer (CV page) */
