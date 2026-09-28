@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var headerHtml =
     '<div class="header-inner">' +
     '<a class="brand" href="index.html">' +
-    '<img src="assets/img/logo.svg" alt="ManningGroup logo">' +
+    '<img src="assets/img/logo.png" alt="ManningGroup logo">' +
     "<span>ManningGroup</span>" +
     "</a>" +
     '<button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>' +
